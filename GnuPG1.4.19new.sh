@@ -49,7 +49,7 @@ case $response in
         $EG && $CD && $CG && $MG && $IG
 
         #Prints version of GnuPG and asks user if it is GnuPG 1.4.19.
-        $C && $PV && $V && $AU && $S
+        $C && $PV && $AU && $S
 
         #Cleans up.
         $CDU && $RD && $RF && $RS
@@ -66,13 +66,14 @@ case $response in
         $EG && $CD && $CG && $MG && $IG
         
         #Prints version and asks user if it is GnuPG v1.4.19. 
-        $C && $PV && $V && $AU && $S
+        $C && $PV && $AU && $S
 
         #Cleans up.
         $CDU && $RD && $RF  
         echo "Cleaned up."
         else
-        echo "The sha1 checksums do not match try re-downloading files."
+        echo "The sha1 checksums do not match try re-downloading files."\
+        $S && $S
         fi
     ;;
     esac
